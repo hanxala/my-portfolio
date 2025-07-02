@@ -11,7 +11,7 @@ const Hero = () => {
           
           <div className="mb-6">
             <p className="text-lg mb-4">
-              Motivated and enthusiastic fresher with a Bachelor's degree in Information Technology. Passionate 
+              Motivated and enthusiastic fresher with a Bachelor&apos;s degree in Information Technology. Passionate 
               about Android app development and full-stack technologies. Looking to begin a career as a Software 
               or Android Developer, with a strong foundation in Kotlin, Firebase, and web development. Known 
               for quick learning, time management, and collaborative work ethic.

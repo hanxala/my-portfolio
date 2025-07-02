@@ -8,7 +8,7 @@ const Contact = () => {
           <div className="p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Get In Touch</h2>
             <p className="mb-8 max-w-2xl">
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;m always open to hearing from you!
             </p>
             
             <form className="space-y-6 max-w-2xl">
