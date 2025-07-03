@@ -3,20 +3,20 @@ import Image from 'next/image';
 
 const Projects = () => {
   const projects = [
-    {
-      title: 'Exam Elite - Student Competition App',
-      description: 'Developed an Android application using Kotlin and Firebase that allows students to participate in quizzes and coding competitions. Features include authentication, competition lists, and real-time leaderboard functionality.',
-      technologies: ['Kotlin', 'Android Studio', 'Firebase', 'MVVM', 'Material Design'],
-      image: '/project-placeholder.jpg',
-      link: '#'
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'Personal portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and experience.',
-      technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-      image: '/project-placeholder.jpg',
-      link: '#'
-    },
+  {
+    title: 'Exam Elite - Student Competition App',
+    description: 'Developed an Android application using Kotlin and Firebase that allows students to participate in quizzes and coding competitions. Features include authentication, competition lists, and real-time leaderboard functionality.',
+    technologies: ['Kotlin', 'Android Studio', 'Firebase', 'MVVM', 'Material Design'],
+    image: '/exam-elite.jpg', // <-- updated
+    link: '#'
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'Personal portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and experience.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    image: '/portfolio-web.jpg', // <-- updated
+    link: '#'
+  },
     {
       title: 'Task Manager',
       description: 'A full-stack task management application with user authentication, task creation, editing, and categorization features.',
