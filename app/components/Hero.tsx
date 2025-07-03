@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary">
             <Image
-            src="/hanzala-profile.jpg.jpg"
+            src="/hanzala-profile2.jpg.jpg"
             alt="Hanzala Khan"
             width={256}
             height={256}
