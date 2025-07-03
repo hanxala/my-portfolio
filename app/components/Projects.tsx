@@ -39,13 +39,13 @@ const Projects = () => {
             <div key={index} className="card overflow-hidden flex flex-col h-full">
               <div className="h-48 relative">
                 <Image
-                  src="/project-placeholder.svg"
+                  src={project.image}
                   alt={project.title}
                   width={400}
                   height={225}
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </div>  
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-text-light mb-4 flex-grow">{project.description}</p>
