@@ -2,75 +2,149 @@ import React from 'react';
 import Image from 'next/image';
 
 const Projects = () => {
-  const projects = [
-  {
-    title: 'Exam Elite - Student Competition App',
-    description: 'Developed an Android application using Kotlin and Firebase that allows students to participate in quizzes and coding competitions. Features include authentication, competition lists, and real-time leaderboard functionality.',
-    technologies: ['Kotlin', 'Android Studio', 'Firebase', 'MVVM', 'Material Design'],
-    image: '/exam-elite.jpg', // <-- updated
-    link: '#'
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and experience.',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-    image: '/portfolio-web.jpg', // <-- updated
-    link: '#'
-  },
-    {
-      title: 'Task Manager',
-      description: 'A full-stack task management application with user authentication, task creation, editing, and categorization features.',
-      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-      image: '/project-placeholder.jpg',
-      link: '#'
-    }
-  ];
-
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Recent Work</h2>
-        <p className="text-text-light max-w-3xl mb-10">
-          Solving user & business problems with clean, efficient code. Here are some of my recent projects that demonstrate my skills and experience.
-        </p>
+        <h2 className="text-3xl font-bold mb-12 text-center">My Projects</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="card overflow-hidden flex flex-col h-full">
-              <div className="h-48 relative">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={400}
-                  height={225}
-                  className="w-full h-full object-cover"
-                />
-              </div>  
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-text-light mb-4 flex-grow">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex} 
-                      className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+          {/* QuickCart Project */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <div className="relative h-48">
+              <Image 
+                src="/portfolio-web.jpg" 
+                alt="Portfolio Website" 
+                fill
+                style={{ objectFit: 'cover' }}
+                className="transition-transform hover:scale-110"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">Portfolio Website</h3>
+              <p className="text-text-light mb-4">A personal portfolio website built with Next.js and Tailwind CSS.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">Next.js</span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">React</span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">Tailwind CSS</span>
+              </div>
+              <div className="flex justify-between">
                 <a 
-                  href={project.link} 
-                  className="inline-flex items-center gap-2 text-primary hover:underline mt-auto"
+                  href="#" 
+                  className="text-primary hover:underline flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Know more
+                  <span>View Code</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                <a 
+                  href="#" 
+                  className="text-primary hover:underline flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Live Demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* QuickCart Project */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <div className="relative h-48">
+              <Image 
+                src="/exam-elite.jpg" 
+                alt="Exam Elite" 
+                fill
+                style={{ objectFit: 'cover' }}
+                className="transition-transform hover:scale-110"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">Exam Elite</h3>
+              <p className="text-text-light mb-4">An online examination platform with real-time assessment.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">React</span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">Node.js</span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">MongoDB</span>
+              </div>
+              <div className="flex justify-between">
+                <a 
+                  href="#" 
+                  className="text-primary hover:underline flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>View Code</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                <a 
+                  href="#" 
+                  className="text-primary hover:underline flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Live Demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* QuickCart Project */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <div className="relative h-48">
+              <Image 
+                src="/quick-cart.jpg.svg" 
+                alt="QuickCart" 
+                fill
+                style={{ objectFit: 'contain' }}
+                className="transition-transform hover:scale-110"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">QuickCart</h3>
+              <p className="text-text-light mb-4">An e-commerce platform with modern UI and shopping features.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">React</span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">CSS</span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm">JavaScript</span>
+              </div>
+              <div className="flex justify-between">
+                <a 
+                  href="#" 
+                  className="text-primary hover:underline flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>View Code</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                <a 
+                  href="https://quick-cart-u4jo.vercel.app/" 
+                  className="text-primary hover:underline flex items-center gap-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Live Demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

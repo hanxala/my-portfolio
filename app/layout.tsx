@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hanzala Khan - Software & Android App Developer",
-  description: "Portfolio of Hanzala Khan, a fresher Software and Android App Developer with skills in Kotlin, Firebase, and web development.",
+  title: "Hanzala Khan | Portfolio",
+  description: "Personal portfolio of Hanzala Khan - Software & Android App Developer",
 };
 
 export default function RootLayout({
